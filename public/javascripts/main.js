@@ -128,7 +128,7 @@ function keyboardProcessing() {
         ARROWUP = 38,
         ARROWDOWN = 40,
         ENTER = 13,
-        ESQ = 27;
+        ESC = 27;
 
   switch (event.keyCode) {
     case TAB:
@@ -137,7 +137,7 @@ function keyboardProcessing() {
       event.preventDefault();
       keyboardNavigate(event.keyCode, $citiesList, index);
       break;
-    case ESQ:
+    case ESC:
       $citiesList.addClass('hidden');
       break;
     case ENTER:
